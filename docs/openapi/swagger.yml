@@ -14,8 +14,6 @@ paths:
 components:
   schemas:
     Thing:
-      required:
-      - thingName
       type: object
       properties:
         thingName:
