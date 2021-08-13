@@ -1,0 +1,22 @@
+openapi: 3.0.1
+paths:
+  /v1/things:
+    get:
+      operationId: getThing
+      parameters: []
+      responses:
+        "200":
+          description: getThing 200 response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Thing'
+components:
+  schemas:
+    Thing:
+      required:
+      - thingName
+      type: object
+      properties:
+        thingName:
+          type: string
